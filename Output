@@ -1,0 +1,184 @@
+   Customer ID  Age Gender Item Purchased  Category  Purchase Amount (USD)       Location Size      Color  Season  Review Rating Subscription Status  Shipping Type Discount Applied Promo Code Used  Previous Purchases Payment Method Frequency of Purchases
+0            1   55   Male         Blouse  Clothing                     53       Kentucky    L       Gray  Winter            3.1                 Yes        Express              Yes             Yes                  14          Venmo            Fortnightly
+1            2   19   Male        Sweater  Clothing                     64          Maine    L     Maroon  Winter            3.1                 Yes        Express              Yes             Yes                   2           Cash            Fortnightly
+2            3   50   Male          Jeans  Clothing                     73  Massachusetts    S     Maroon  Spring            3.1                 Yes  Free Shipping              Yes             Yes                  23    Credit Card                 Weekly
+3            4   21   Male        Sandals  Footwear                     90   Rhode Island    M     Maroon  Spring            3.5                 Yes   Next Day Air              Yes             Yes                  49         PayPal                 Weekly
+4            5   45   Male         Blouse  Clothing                     49         Oregon    M  Turquoise  Spring            2.7                 Yes  Free Shipping              Yes             Yes                  31         PayPal               Annually
+Index(['Customer ID', 'Age', 'Gender', 'Item Purchased', 'Category',
+       'Purchase Amount (USD)', 'Location', 'Size', 'Color', 'Season',
+       'Review Rating', 'Subscription Status', 'Shipping Type',
+       'Discount Applied', 'Promo Code Used', 'Previous Purchases',
+       'Payment Method', 'Frequency of Purchases'],
+      dtype='object')
+(3900, 18)
+70200
+Customer ID                 int64
+Age                         int64
+Gender                     object
+Item Purchased             object
+Category                   object
+Purchase Amount (USD)       int64
+Location                   object
+Size                       object
+Color                      object
+Season                     object
+Review Rating             float64
+Subscription Status        object
+Shipping Type              object
+Discount Applied           object
+Promo Code Used            object
+Previous Purchases          int64
+Payment Method             object
+Frequency of Purchases     object
+dtype: object
+       Customer ID          Age  Purchase Amount (USD)  Review Rating  Previous Purchases
+count  3900.000000  3900.000000            3900.000000    3900.000000         3900.000000
+mean   1950.500000    44.068462              59.764359       3.749949           25.351538
+std    1125.977353    15.207589              23.685392       0.716223           14.447125
+min       1.000000    18.000000              20.000000       2.500000            1.000000
+25%     975.750000    31.000000              39.000000       3.100000           13.000000
+50%    1950.500000    44.000000              60.000000       3.700000           25.000000
+75%    2925.250000    57.000000              81.000000       4.400000           38.000000
+max    3900.000000    70.000000             100.000000       5.000000           50.000000
+0       False
+1       False
+2       False
+3       False
+4       False
+        ...  
+3895    False
+3896    False
+3897    False
+3898    False
+3899    False
+Length: 3900, dtype: bool
+      Customer ID    Age  Gender  Item Purchased  Category  Purchase Amount (USD)  Location   Size  Color  Season  Review Rating  Subscription Status  Shipping Type  Discount Applied  Promo Code Used  Previous Purchases  Payment Method  Frequency of Purchases
+0           False  False   False           False     False                  False     False  False  False   False          False                False          False             False            False               False           False                   False
+1           False  False   False           False     False                  False     False  False  False   False          False                False          False             False            False               False           False                   False
+2           False  False   False           False     False                  False     False  False  False   False          False                False          False             False            False               False           False                   False
+3           False  False   False           False     False                  False     False  False  False   False          False                False          False             False            False               False           False                   False
+4           False  False   False           False     False                  False     False  False  False   False          False                False          False             False            False               False           False                   False
+...           ...    ...     ...             ...       ...                    ...       ...    ...    ...     ...            ...                  ...            ...               ...              ...                 ...             ...                     ...
+3895        False  False   False           False     False                  False     False  False  False   False          False                False          False             False            False               False           False                   False
+3896        False  False   False           False     False                  False     False  False  False   False          False                False          False             False            False               False           False                   False
+3897        False  False   False           False     False                  False     False  False  False   False          False                False          False             False            False               False           False                   False
+3898        False  False   False           False     False                  False     False  False  False   False          False                False          False             False            False               False           False                   False
+3899        False  False   False           False     False                  False     False  False  False   False          False                False          False             False            False               False           False                   False
+
+[3900 rows x 18 columns]
+Index(['Female', 'Male'], dtype='object', name='Gender')
+Category
+Accessories    59.838710
+Clothing       60.025331
+Footwear       60.255426
+Outerwear      57.172840
+Name: Purchase Amount (USD), dtype: float64
+Season
+Fall      60018
+Spring    58679
+Summer    55777
+Winter    58607
+Name: Purchase Amount (USD), dtype: int64
+Size
+L     58.563153
+M     59.924217
+S     61.037707
+XL    60.090909
+Name: Purchase Amount (USD), dtype: float64
+Payment Method
+Bank Transfer    36544
+Cash             40002
+Credit Card      40310
+Debit Card       38742
+PayPal           40109
+Venmo            37374
+Name: Purchase Amount (USD), dtype: int64
+Discount Applied
+No     5.0
+Yes    5.0
+Name: Review Rating, dtype: float64
+Discount Applied
+No     2.5
+Yes    2.5
+Name: Review Rating, dtype: float64
+Color
+Yellow       174
+White        142
+Violet       166
+Turquoise    145
+Teal         172
+Silver       173
+Red          148
+Purple       151
+Pink         153
+Peach        149
+Orange       154
+Olive        177
+Maroon       158
+Magenta      152
+Lavender     147
+Indigo       147
+Green        169
+Gray         159
+Gold         138
+Cyan         166
+Charcoal     153
+Brown        141
+Blue         152
+Black        167
+Beige        147
+Name: Customer ID, dtype: int64
+Item Purchased
+Backpack      22.0
+Belt          22.0
+Blouse        26.0
+Boots         26.0
+Coat          29.0
+Dress         28.5
+Gloves        29.5
+Handbag       24.0
+Hat           27.0
+Hoodie        25.0
+Jacket        22.0
+Jeans         20.5
+Jewelry       30.0
+Pants         24.0
+Sandals       23.5
+Scarf         26.0
+Shirt         26.0
+Shoes         25.5
+Shorts        27.0
+Skirt         26.0
+Sneakers      29.0
+Socks         26.0
+Sunglasses    25.0
+Sweater       26.0
+T-shirt       22.0
+Name: Previous Purchases, dtype: float64
+Season
+Fall      3.729949
+Spring    3.790591
+Summer    3.725654
+Winter    3.752111
+Name: Review Rating, dtype: float64
+Color
+Gray       3.880503
+Yellow     3.864368
+Magenta    3.840789
+Black      3.840120
+Orange     3.828571
+Name: Review Rating, dtype: float64
+Payment Method
+Bank Transfer    612
+Cash             670
+Credit Card      671
+Debit Card       636
+PayPal           677
+Venmo            634
+Name: Customer ID, dtype: int64
+Season
+Fall      60018
+Spring    58679
+Summer    55777
+Winter    58607
+Name: Purchase Amount (USD), dtype: int64
